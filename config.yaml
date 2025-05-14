@@ -1,0 +1,14 @@
+data:
+  raw_path: data/raw/match_data.csv
+  processed_path: data/processed/processed_data.csv
+
+preprocessing:
+  categorical_columns: ['map', 'month', 'result']
+  numerical_columns: ['day', 'year', 'wait_time_s', 'match_time_s', 'team_a_rounds', 'team_b_rounds', 'ping', 'kills', 'assists', 'deaths', 'mvps', 'hs_percent']
+
+model:
+  test_size: 0.2
+  random_state: 42
+  linear_regression:
+    learning_rate: 0.01
+    n_iterations: 1000
